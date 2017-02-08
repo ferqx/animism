@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        canvas {
+            border: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="file" type="file" name="file_img" value="">
+    <canvas id="canvas"></canvas>
+    <div id="dom"> 
+        
+    </div>
+    <div class="color">
+        
+    </div>
+    <script src="./animism.js"></script>
+    <script>
+        var file = document.getElementById('file');
+        file.onchange = function () {
+            animism(file);
+        }
+    </script>
+</body>
+
+</html>
